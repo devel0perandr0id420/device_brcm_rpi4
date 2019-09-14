@@ -3,12 +3,12 @@ TARGET_NO_KERNEL := true
 TARGET_NO_RECOVERY := true
 
 TARGET_ARCH := arm
-TARGET_ARCH_VARIANT := armv7-a-neon
-TARGET_CPU_VARIANT := cortex-a7
-TARGET_CPU_ABI := armeabi-v7a
+TARGET_ARCH_VARIANT := armv7-l-neon
+TARGET_CPU_VARIANT := cortex-a72
+TARGET_CPU_ABI := armeabi-v7l
 TARGET_CPU_ABI2 := armeabi
 
-TARGET_BOARD_PLATFORM := bcm2710
+TARGET_BOARD_PLATFORM := bcm2711
 
 TARGET_USERIMAGES_SPARSE_EXT_DISABLED := true
 TARGET_USERIMAGES_USE_EXT4 := true
@@ -44,4 +44,4 @@ USE_CAMERA_STUB := true
 BOARD_SEPOLICY_DIRS := \
     device/brcm/rpi3/sepolicy
 
-DEVICE_MANIFEST_FILE := device/brcm/rpi3/manifest.xml
+DEVICE_MANIFEST_FILE := device/brcm/rpi4/manifest.xml
