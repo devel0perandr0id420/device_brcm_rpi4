@@ -4,7 +4,7 @@ $(call inherit-product, device/google/atv/products/atv_base.mk)
 PRODUCT_NAME := rpi4
 PRODUCT_DEVICE := rpi4
 PRODUCT_BRAND := arpi
-PRODUCT_MODEL := Raspberry Pi 4
+PRODUCT_MODEL := Raspberry Pi 4B
 PRODUCT_MANUFACTURER := ARPI
 
 include frameworks/native/build/tablet-7in-hdpi-1024-dalvik-heap.mk
