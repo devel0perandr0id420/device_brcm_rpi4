@@ -42,6 +42,6 @@ BOARD_WPA_SUPPLICANT_DRIVER := NL80211
 USE_CAMERA_STUB := true
 
 BOARD_SEPOLICY_DIRS := \
-    device/brcm/rpi4/sepolicy
+    device/brcm/rpi3/sepolicy
 
-DEVICE_MANIFEST_FILE := device/brcm/rpi4/manifest.xml
+DEVICE_MANIFEST_FILE := device/brcm/rpi3/manifest.xml
