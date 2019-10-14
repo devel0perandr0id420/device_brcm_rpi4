@@ -3,9 +3,9 @@ $(call inherit-product, device/google/atv/products/atv_base.mk)
 
 PRODUCT_NAME := rpi4
 PRODUCT_DEVICE := rpi4
-PRODUCT_BRAND := arpi
+PRODUCT_BRAND := rpifan
 PRODUCT_MODEL := Raspberry Pi 4B
-PRODUCT_MANUFACTURER := ARPI
+PRODUCT_MANUFACTURER := Raspberry Pi Foundation
 
 include frameworks/native/build/tablet-7in-hdpi-1024-dalvik-heap.mk
 
@@ -57,8 +57,6 @@ PRODUCT_COPY_FILES := \
     $(LOCAL_PATH)/fstab.rpi4:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.rpi4 \
     $(LOCAL_PATH)/fstab.rpi4:$(TARGET_COPY_OUT_RAMDISK)/fstab.rpi4 \
     $(LOCAL_PATH)/Generic.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/Generic.kl \
-    $(LOCAL_PATH)/firmware/brcm/brcmfmac43430-sdio.bin:root/lib/firmware/brcm/brcmfmac43430-sdio.bin \
-    $(LOCAL_PATH)/firmware/brcm/brcmfmac43430-sdio.txt:root/lib/firmware/brcm/brcmfmac43430-sdio.txt \
     $(LOCAL_PATH)/firmware/brcm/brcmfmac43455-sdio.bin:root/lib/firmware/brcm/brcmfmac43455-sdio.bin \
     $(LOCAL_PATH)/firmware/brcm/brcmfmac43455-sdio.txt:root/lib/firmware/brcm/brcmfmac43455-sdio.txt \
     $(PRODUCT_COPY_FILES)
@@ -75,7 +73,7 @@ PRODUCT_COPY_FILES := \
     frameworks/av/services/audiopolicy/config/default_volume_tables.xml:system/etc/default_volume_tables.xml \
     frameworks/av/services/audiopolicy/config/audio_policy_volumes.xml:system/etc/audio_policy_volumes.xml \
     $(LOCAL_PATH)/audio_policy_configuration.xml:system/etc/audio_policy_configuration.xml \
-    frameworks/base/data/sounds/effects/ogg/Effect_Tick_48k.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ui/Effect_Tick.ogg \
+    frameworks/base/data/sounds/effects/ogg/Effect_Tick_48k.ogg:$(TARGET_C$(TARGOPY_OUT_PRODUCT)/media/audio/ui/Effect_Tick.ogg \
     $(PRODUCT_COPY_FILES)
 
 DEVICE_PACKAGE_OVERLAYS := device/brcm/rpi4/overlay
