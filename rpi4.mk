@@ -13,7 +13,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     debug.drm.mode.force=1280x720 \
     gralloc.drm.device=/dev/dri/card0 \
     ro.opengles.version=131072 \
-    ro.config.low_ram=true \
+    ro.config.low_ram=false \
     wifi.interface=wlan0
 
 # application packages
