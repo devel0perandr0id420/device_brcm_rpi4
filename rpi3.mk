@@ -10,39 +10,51 @@ PRODUCT_MANUFACTURER := Raspberry Pi Foundation
 include frameworks/native/build/tablet-7in-hdpi-1024-dalvik-heap.mk
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    debug.drm.mode.force=1280x720 \
-    gralloc.drm.device=/dev/dri/card0 \
-    ro.opengles.version=131072 \
     ro.config.low_ram=false \
     wifi.interface=wlan0
 
-# application packages
+# Audio
 PRODUCT_PACKAGES += \
-    RpLauncher
-
-# system packages
-PRODUCT_PACKAGES += \
-    libGLES_mesa \
-    gralloc.rpi3 \
-    memtrack.rpi3 \
-    audio.primary.rpi3 \
-    audio.usb.default \
-    wificond \
-    wifilogd \
-    wpa_supplicant \
-    wpa_supplicant.conf
-
-# hardware/interfaces
-PRODUCT_PACKAGES += \
-    android.hardware.graphics.allocator@2.0-service.rpi3 \
-    android.hardware.graphics.mapper@2.0-impl.rpi3 \
-    android.hardware.graphics.composer@2.1-impl.rpi3 \
     android.hardware.audio@2.0-impl \
+    android.hardware.audio@2.0-service \
     android.hardware.audio.effect@2.0-impl \
-    android.hardware.keymaster@3.0-impl \
-    android.hardware.memtrack@1.0-service \
+    audio.a2dp.default \
+    audio.primary.rpi3 \
+    audio.r_submix.default \
+    audio.usb.default \
+    android.hardware.bluetooth@1.0-impl \
+    android.hardware.bluetooth@1.0-service \
+    libbt-vendor \
+    android.hardware.drm@1.0-impl \
+    android.hardware.gnss@1.0-impl \
+    gps.rpi3 \
+    android.hardware.graphics.allocator@2.0-impl \
+    android.hardware.graphics.allocator@2.0-service \
+    android.hardware.graphics.composer@2.1-impl \
+    android.hardware.graphics.composer@2.1-service \
+    android.hardware.graphics.mapper@2.0-impl \
     android.hardware.memtrack@1.0-impl \
-    android.hardware.wifi@1.0-service
+    android.hardware.memtrack@1.0-service \
+    libEGL_swiftshader \
+    libGLESv1_CM_swiftshader \
+    libGLESv2_swiftshader \
+    libyuv \
+    memtrack.rpi3 \
+    i2cdetect \
+    i2cdump \
+    i2cget \
+    i2cset \
+    android.hardware.keymaster@3.0-impl \
+    android.hardware.keymaster@3.0-service \
+    android.hardware.light@2.0-service.rpi3 \
+    android.hardware.power@1.0-impl \
+    android.hardware.power@1.0-service \
+    android.hardware.usb@1.0-impl \
+    android.hardware.usb@1.0-service \
+    android.hardware.wifi@1.0-service \
+    hostapd \
+    wificond \
+    wpa_supplicant
 
 # system configurations
 PRODUCT_COPY_FILES := \
