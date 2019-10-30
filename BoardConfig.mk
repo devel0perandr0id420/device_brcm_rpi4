@@ -3,9 +3,9 @@ TARGET_NO_KERNEL := true
 TARGET_NO_RECOVERY := true
 
 TARGET_ARCH := arm
-TARGET_ARCH_VARIANT := armv7-l-neon
+TARGET_ARCH_VARIANT := armv8-a-neon
 TARGET_CPU_VARIANT := cortex-a72
-TARGET_CPU_ABI := armeabi-v7l
+TARGET_CPU_ABI := armeabi-v8a
 TARGET_CPU_ABI2 := armeabi
 
 TARGET_BOARD_PLATFORM := bcm2711
