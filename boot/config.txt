@@ -9,8 +9,8 @@ framebuffer_height=720
 kernel=zImage
 device_tree=bcm2711-rpi-4-b
 dtparam=audio=on
-dtoverlay=vc4-kms-v3d,cma-256
+# dtoverlay=vc4-kms-v3d,cma-256
 initramfs ramdisk.img 0x01f00000
-mask_gpu_interrupt0=0x400
-avoid_warnings=2
+# mask_gpu_interrupt0=0x400
+# avoid_warnings=2
 enable_uart=1
